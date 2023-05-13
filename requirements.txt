@@ -2,3 +2,4 @@ flask
 pymongo
 bcrypt
 uuid
+flask_cors

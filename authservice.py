@@ -20,9 +20,10 @@ import bcrypt
 import uuid
 
 app = Flask(__name__)
+CORS(app)
 
 # Connect to MongoDB
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient('mongo', 27017)
 db = client['auth_service']
 users = db['users']
 sessions = db['sessions']
