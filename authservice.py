@@ -15,6 +15,7 @@ The service has three endpoints:
 -- The verify route finds the session by token and returns the associated userId if it exists in the database.
 """
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 from pymongo import MongoClient
 import bcrypt
 import uuid
